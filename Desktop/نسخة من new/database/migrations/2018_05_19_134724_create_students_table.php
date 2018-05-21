@@ -20,9 +20,9 @@ class CreateStudentsTable extends Migration
              $table->string('email');
              $table->string('university');
              $table->string('building_number');
-             $table->integer('summer');
+             $table->integer('semester');
              $table->string('schedule');
-             $table->integer('status')->default(0);
+             $table->integer('status')->default(1);
              
 
              $table->timestamps();
