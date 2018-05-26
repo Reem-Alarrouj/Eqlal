@@ -11,7 +11,8 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 Route::get('/eqlal','EqlalController@index');
+
+Route::post('/eqlal/student','StudentController@store')->name('student.store');
+Route::post('/eqlal/servicesprovider','ServicesProviderController@store')->name('ServicesProvider.store');

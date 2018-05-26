@@ -13,13 +13,16 @@
 
         <!-- FAVICON -->
       <link rel="icon" href="images/favicon/Elogo.png">
-		<link rel="icon" href="images/favicon/favicon.png" sizes="57x57">
-		<link rel="icon" href="images/favicon/favicon.png" sizes="72x72">
-		<link rel="icon" href="images/favicon/favicon.png" sizes="114x114">
-		<link rel="icon" href="images/favicon/favicon.png" sizes="144x144">
+    <link rel="icon" href="images/logo1.png" sizes="57x57">
+    <link rel="icon" href="images/logo1.png" sizes="72x72">
+    <link rel="icon" href="images/logo1.png" sizes="114x114">
+    <link rel="icon" href="images/logo1.png" sizes="144x144">
+
 
         <!-- STYLE -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -118,7 +121,9 @@
                     <div class="row">
                         <div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.2s">
                             <div class="contact-content left-content">
-                              <form id="contact-form" action="#" name="contactform" method="post" class="contact-form">
+                              <form id="contact-form" action="{{ route('student.store') }}" role="form" method="post" accept-charset="utf-8"  name="contactform"  class="contact-form">
+                                          {{ csrf_field() }}
+
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group">
@@ -128,20 +133,20 @@
 
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="text" name="email" id="email" class="form-control" placeholder="الايميل" style="text-align: right"/>
+                                              <input type="email" name="email" id="email" class="form-control" placeholder="الايميل" style="text-align: right"/>
                                           </div>
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="text" name="subject" id="number" class="form-control" placeholder="رقم الجوال" style="text-align: right"/>
+                                              <input type="number" name="mobile" id="mobile" class="form-control" placeholder="رقم الجوال" style="text-align: right"/>
                                           </div>
                                       </div>
 
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="text" name="subject" id="text" class="form-control" placeholder="الجامعة" style="text-align: right"/>
+                                              <input type="text" name="university" id="university" class="form-control" placeholder="الجامعة" style="text-align: right"/>
                                           </div>
                                       </div>
 
@@ -152,8 +157,9 @@
                                               <p style="text-align: right; font-size: 18px">: الترم الدراسي </p>
 
 
-                                           <select name="summerTerm" form="contact-form" class="form-control" >
-                                             <option value="0" >صيفي</option>
+                                           <select name="semester" id="semester" form="contact-form" class="form-control" >
+                                             <option value="3" >صيفي</option>
+
                                              <option value="1">ترم أول</option>
                                              <option value="2">ترم ثاني</option>
                                            </select>
@@ -164,7 +170,9 @@
                                       <div class="col-md-6">
                                         <div class="form-group" style="text-align: right">
 
-                                          <input type="text" name="subject" id="text" class="form-control" placeholder="المبنى" style="text-align: right"/>
+
+                                          <input type="text" name="building_number" id="building_number" class="form-control" placeholder="المبنى" style="text-align: right"/>
+
 
                                         </div>
                                       </div>
@@ -173,7 +181,9 @@
                                   <div class="row">
                                       <div class="col-md-12">
                                           <div class="form-group">
-                                              <textarea name="comments" id="comments" cols="30" rows="10" class="form-control" placeholder="&#40 أدخلي الجدول الدراسي &#40 اختياري	" style="text-align: right;"></textarea>
+
+                                              <textarea name="schedule" id="schedule" cols="30" rows="10" class="form-control" placeholder="&#40 أدخلي الجدول الدراسي &#40 اختياري  " style="text-align: right;"></textarea>
+
                                           </div>
                                       </div>
                                   </div>
@@ -217,7 +227,11 @@
                         </div>
                     </div><!-- END OF /. ROW -->
 
-                    <form id="contact-form" action="#" name="contactform" method="post" class="contact-form">
+
+                    <form id="contact-form"  name="contactform"  action="{{ route('ServicesProvider.store') }}" role="form" method="POST" accept-charset="utf-8" class="contact-form">
+                                {{ csrf_field() }}
+
+
                                   <div class="row" >
 
                                         <div class="col-md-4">
@@ -227,7 +241,9 @@
                                         </div>
                                       <div class="col-md-4">
                                           <div class="form-group">
-                                              <input type="text" name="subject" id="number" class="form-control2" placeholder="رقم التواصل" />
+
+                                              <input type="number" name="mobile" id="mobile" class="form-control2" placeholder="رقم التواصل" />
+
                                           </div>
                                       </div>
                                       <div class="col-md-4">

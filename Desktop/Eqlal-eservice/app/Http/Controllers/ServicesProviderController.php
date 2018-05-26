@@ -49,6 +49,8 @@ class ServicesProviderController extends Controller
         $serviceProvider->status  = 1;
 
         $serviceProvider->save();
+                 return redirect()->back()->withFlashSuccess('done');
+
     }
 
     /**
