@@ -18,6 +18,7 @@
     <link rel="icon" href="images/logo1.png" sizes="114x114">
     <link rel="icon" href="images/logo1.png" sizes="144x144">
 
+
         <!-- STYLE -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -158,6 +159,7 @@
 
                                            <select name="semester" id="semester" form="contact-form" class="form-control" >
                                              <option value="3" >صيفي</option>
+
                                              <option value="1">ترم أول</option>
                                              <option value="2">ترم ثاني</option>
                                            </select>
@@ -168,7 +170,9 @@
                                       <div class="col-md-6">
                                         <div class="form-group" style="text-align: right">
 
+
                                           <input type="text" name="building_number" id="building_number" class="form-control" placeholder="المبنى" style="text-align: right"/>
+
 
                                         </div>
                                       </div>
@@ -177,7 +181,9 @@
                                   <div class="row">
                                       <div class="col-md-12">
                                           <div class="form-group">
+
                                               <textarea name="schedule" id="schedule" cols="30" rows="10" class="form-control" placeholder="&#40 أدخلي الجدول الدراسي &#40 اختياري  " style="text-align: right;"></textarea>
+
                                           </div>
                                       </div>
                                   </div>
@@ -221,8 +227,10 @@
                         </div>
                     </div><!-- END OF /. ROW -->
 
+
                     <form id="contact-form"  name="contactform"  action="{{ route('ServicesProvider.store') }}" role="form" method="POST" accept-charset="utf-8" class="contact-form">
                                 {{ csrf_field() }}
+
 
                                   <div class="row" >
 
@@ -233,7 +241,9 @@
                                         </div>
                                       <div class="col-md-4">
                                           <div class="form-group">
+
                                               <input type="number" name="mobile" id="mobile" class="form-control2" placeholder="رقم التواصل" />
+
                                           </div>
                                       </div>
                                       <div class="col-md-4">
