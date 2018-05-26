@@ -12,14 +12,16 @@
         <title>Eqlal</title>
 
         <!-- FAVICON -->
-        <link rel="icon" href="images/favicon/favicon.png">
-        <link rel="icon" href="images/favicon/favicon.png" sizes="57x57">
-        <link rel="icon" href="images/favicon/favicon.png" sizes="72x72">
-        <link rel="icon" href="images/favicon/favicon.png" sizes="114x114">
-        <link rel="icon" href="images/favicon/favicon.png" sizes="144x144">
+      <link rel="icon" href="images/favicon/Elogo.png">
+    <link rel="icon" href="images/logo1.png" sizes="57x57">
+    <link rel="icon" href="images/logo1.png" sizes="72x72">
+    <link rel="icon" href="images/logo1.png" sizes="114x114">
+    <link rel="icon" href="images/logo1.png" sizes="144x144">
 
         <!-- STYLE -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -73,7 +75,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="index.html" >
-                                <img src="images/logo1.png" class="img-responsive" style=" height:70px; width: 200px;
+                                <img src="images/EQLALlogow.png" class="img-responsive" style=" height:70px; width: 200px;
                                 float: left" alt="">
                             </a>
                         </div>
@@ -105,63 +107,8 @@
                 </nav><!-- END OF /. NAVBAR -->
             </div><!-- END OF /. HEADER TOP SECTION -->
 
-           
 
-            <!-- START SLIDER SECTION -->
-            <div class="slider-section">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                          <div class="item active">
-                              <img src="images/slider/7.jpeg" width="1600" height="300" alt="">
-                              <div class="carousel-caption">
-                                <p style="font-size:80px"><b><span>إقلال </span></b></p><br><br><br><br>
-                                  <p style="font-size:80px">الاحترافية في التنقل بكل </p><br><br>
-                                  <p style="font-size:80px">راحة</p>
-
-                              </div>
-                          </div><!-- END OF /. SLIDER ITEM -->
-                            <div class="item">
-                                <img src="images/slider/4.jpg" width="1600" height="300" alt="">
-                                <div class="carousel-caption">
-                                    <p style="font-size:80px"><b><span>رؤيتنا</span></b></p><br><br><br><br>
-
-                                    <p style="font-size:70px">السعي في النهوض بحركة </p><br><br>
-                                    <p style="font-size:70px">النقل في المملكة العربية </p><br>
-
-                                    <p style="font-size:70px">السعودية</p>
-                                </div>
-                            </div><!-- END OF /. SLIDER ITEM -->
-                            <div class="item">
-                                <img src="images/slider/8.jpg" width="1600" height="300" alt="">
-                                <div class="carousel-caption">
-                                  <p style="font-size:80px"><b><span>رسالتنا</span></b></p><br><br>
-                                  <p style="font-size:60px">إنشاء منصة تكون حلقة وصل بين طلبة </p><br><br>
-                                  <p style="font-size:60px">الجامعة ومزودي النقل لتقديم</p><br><br>
-                                  <p style="font-size:60px">  خدمات بطريقة إلكترونية أكثر دقة </p>
-                                </div>
-                            </div><!-- END OF /. SLIDER ITEM -->
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <span class="pe-7s-angle-left" aria-hidden="true"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <span class="pe-7s-angle-right" aria-hidden="true"></span>
-                            </a>
-                        </div><!-- END OF /. CAROUSEL INNE-->
-                    </div><!-- END OF /. CAROUSEL -->
-                    </div>
-                </div><!-- END OF /. CONTAINER FLUID -->
-            </div><!-- END OF /. SELIDER SECTION -->
                        <!-- START CONTACT SECTION -->
             <div class="section contact-section" id="join us">
                 <div class="container">
@@ -173,7 +120,9 @@
                     <div class="row">
                         <div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.2s">
                             <div class="contact-content left-content">
-                              <form id="contact-form" action="#" name="contactform" method="post" class="contact-form">
+                              <form id="contact-form" action="{{ route('student.store') }}" role="form" method="post" accept-charset="utf-8"  name="contactform"  class="contact-form">
+                                          {{ csrf_field() }}
+
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group">
@@ -181,26 +130,22 @@
                                           </div>
                                       </div>
 
-                                  </div>
-                                  <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="text" name="email" id="email" class="form-control" placeholder="الايميل" style="text-align: right"/>
+                                              <input type="email" name="email" id="email" class="form-control" placeholder="الايميل" style="text-align: right"/>
                                           </div>
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="text" name="subject" id="number" class="form-control" placeholder="رقم الجوال" style="text-align: right"/>
+                                              <input type="number" name="mobile" id="mobile" class="form-control" placeholder="رقم الجوال" style="text-align: right"/>
                                           </div>
                                       </div>
 
-                                  </div>
-                                  <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group">
-                                              <input type="text" name="subject" id="text" class="form-control" placeholder="الجامعة" style="text-align: right"/>
+                                              <input type="text" name="university" id="university" class="form-control" placeholder="الجامعة" style="text-align: right"/>
                                           </div>
                                       </div>
 
@@ -208,31 +153,31 @@
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="form-group" >
-                                              <input type="text" name="subject" id="text" class="form-control" placeholder="المبنى" style="text-align: right"/>
+                                              <p style="text-align: right; font-size: 18px">: الترم الدراسي </p>
+
+
+                                           <select name="semester" id="semester" form="contact-form" class="form-control" >
+                                             <option value="3" >صيفي</option>
+                                             <option value="1">ترم أول</option>
+                                             <option value="2">ترم ثاني</option>
+                                           </select>
+
                                           </div>
                                       </div>
 
-                                  </div>
-                                  
-                                  <div class="row">
                                       <div class="col-md-6">
                                         <div class="form-group" style="text-align: right">
-                                           
-                                               <p style="text-align: right; font-size: 18px">هل لديك ترم صيفي؟</p>
-                                           
-                                            
-                                            <select name="summerTerm" form="contact-form" class="form-control" >
-                                              <option value="yes" >نعم</option>
-                                              <option value="no">لا</option>
-                                            </select>
+
+                                          <input type="text" name="building_number" id="building_number" class="form-control" placeholder="المبنى" style="text-align: right"/>
+
                                         </div>
                                       </div>
                                   </div>
-                                  
+
                                   <div class="row">
                                       <div class="col-md-12">
                                           <div class="form-group">
-                                              <textarea name="comments" id="comments" cols="30" rows="10" class="form-control" placeholder="&#40 أدخلي الجدول الدراسي &#40 اختياري  " style="text-align: right;"></textarea>
+                                              <textarea name="schedule" id="schedule" cols="30" rows="10" class="form-control" placeholder="&#40 أدخلي الجدول الدراسي &#40 اختياري  " style="text-align: right;"></textarea>
                                           </div>
                                       </div>
                                   </div>
@@ -251,8 +196,8 @@
                           <div class="contact-content left-content">
 
                             <br>
-                            <div class="logo-title" style="text-align: right">
-                                <h1>إقلال</h1>
+                            <div class="logo-title" style="text-align: right" >
+                                <h1 ="red">إقلال</h1>
                             </div>
                             <br>
                             <p style="text-align: right; font-size: 20px">طالبة في أحد جامعات مدينة الرياض!؟   تبحثين عن وسيلة نقل آمنة ومضمونة!؟   إقلال يضع بين يديك قوائم من مزودي خدمة النقل المختلفة لتختاري منها ما يلائمك بضغطة زر
@@ -264,6 +209,45 @@
                 </div><!-- END OF /. CONTAINER -->
             </div><!-- END OF /. CONTACT SECTION -->
 
+
+            <!-- START CONTACT BTN SECTION -->
+            <div class="contact-btn-section">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12">
+                            <div class="headline-title" style="text-align: center">
+                                <h1>إذا كنت أحد مزودين الخدمة وتريد الإنضمام إلينا </h1>
+                            </div>
+                        </div>
+                    </div><!-- END OF /. ROW -->
+
+                    <form id="contact-form"  name="contactform"  action="{{ route('ServicesProvider.store') }}" role="form" method="POST" accept-charset="utf-8" class="contact-form">
+                                {{ csrf_field() }}
+
+                                  <div class="row" >
+
+                                        <div class="col-md-4">
+                                            <div class="contact-btn" style="float: right">
+                                                <a href="#"> أدخل بياناتك </a>
+                                            </div>
+                                        </div>
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <input type="number" name="mobile" id="mobile" class="form-control2" placeholder="رقم التواصل" />
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                          <div class="form-group">
+                                              <input type="text" name="name" id="name" class="form-control2" placeholder="الاسم"/>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </form><!-- END OF /. FORM -->
+
+                </div>
+                <!-- END OF /. CONTAINER -->
+            </div>
+            <!-- END OF /. CONTACT BUTTON SECTION -->
 
 
             <!-- START ABOUT SECTION -->
@@ -314,47 +298,7 @@
                     </div><!-- END OF /. ROW -->
                 </div><!-- END OF ./ CONTAINER -->
             </div><!-- END OF /. ABOUT SECTION -->
-           
 
-
-            <!-- START CONTACT BTN SECTION -->
-            <div class="contact-btn-section">
-                <div class="container" >
-                    <div class="row" >
-                        <div class="col-md-12">
-                            <div class="headline-title" style="text-align: center">
-                                <h1>إذا كنت أحد مزودين الخدمة وتريد الإنضمام إلينا </h1>
-                            </div>
-                        </div>
-                    </div><!-- END OF /. ROW -->
-
-                    <form id="contact-form" action="#" name="contactform" method="post" class="contact-form">
-                                  <div class="row" >
-
-                                        <div class="col-md-4">
-                                            <div class="contact-btn" style="float: right">
-                                                <a href="#"> أدخل بياناتك </a>
-                                            </div>
-                                        </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group">
-                                              <input type="text" name="subject" id="number" class="form-control2" placeholder="رقم التواصل" />
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="form-group">
-                                              <input type="text" name="name" id="name" class="form-control2" placeholder="الاسم"/>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </form><!-- END OF /. FORM -->
-
-                </div>
-                <!-- END OF /. CONTAINER -->
-            </div>
-            <!-- END OF /. CONTACT BUTTON SECTION -->
-            
-            
             <!-- START WHY SECTION -->
             <div class="section why-section" id="why?">
                 <div class="container">
@@ -365,11 +309,9 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="why-thumb wow fadeInLeft animated" data-wow-delay="0.4s">
                                 <a href="#">
-                                    <img src="images/slider/11.jpg" class="img-responsive" width="540" height="390" alt="">
+                                    <img src="images/44.png" class="img-responsive" width="540" height="390" alt="">
                                 </a>
-                            </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="why-content wow fadeInRight animated" data-wow-delay="0.4s">

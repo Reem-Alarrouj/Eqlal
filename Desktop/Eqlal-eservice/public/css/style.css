@@ -250,8 +250,8 @@ html, body, .wrapper{
     padding: 5px 0;
     text-align: center;
     text-transform: uppercase;
-    border-top: 1px solid #46bfa9;
-    border-bottom: 1px solid #46bfa9;
+    border-top: 1px solid #1a405f;
+    border-bottom: 1px solid #1a405f;
     line-height: 100px;
     position: relative;
 }
@@ -272,7 +272,7 @@ html, body, .wrapper{
     position: absolute;
     display: block;
     margin: 0 auto;
-    background:#46bfa9;
+    background:#1a405f;
     top: -5px;
     left: 0;
     right: 0;
@@ -284,13 +284,13 @@ html, body, .wrapper{
     position: absolute;
     display: block;
     margin: 0 auto;
-    background:#46bfa9;
+    background:#1a405f;
     bottom: -5px;
     left: 0;
     right: 0;
 }
 .title-section > h1 > span{
-    color: #46bfa9
+    color: #1a405f
 }
 .white-title > p {
     color: #fff;
@@ -310,10 +310,10 @@ html, body, .wrapper{
     .pori-btn {
         font-size: 14px;
         font-weight: 700;
-        color: #46bfa9;
+        color: #1a405f;
         display: inline-block;
         padding: 15px 25px;
-        border: 1px solid #46bfa9;
+        border: 1px solid #1a405f;
         text-transform: uppercase;
         position: relative;
         z-index: 99;
@@ -332,7 +332,7 @@ html, body, .wrapper{
         height: 100%;
         width: 5px;
         position: absolute;
-        background: #46bfa9;
+        background: #1a405f;
         top: 0;
         left: -1px;
         z-index: -1;
@@ -347,7 +347,7 @@ html, body, .wrapper{
         height: 100%;
         width: 100%;
         position: absolute;
-        background: #46bfa9;
+        background: #1a405f;
         top: 0;
         left: 0px;
         z-index: -1;
@@ -362,7 +362,7 @@ html, body, .wrapper{
 ========================= */
 .header-top-section {
     display: block;
-    background: #2b2e36;
+    background: #a7b9c2;
     width: 100%;
     padding: 11px 0;
 }
@@ -371,7 +371,7 @@ html, body, .wrapper{
     }
     .contact-info > p {
         display: inline-block;
-        color: #fefefe;
+        color: #1a405f;
         font-size: 16px;
         font-weight: 300;
         opacity: 0.51;
@@ -405,11 +405,11 @@ html, body, .wrapper{
     }
     .social-media > ul > li > a > .fa {
         font-size: 18px;
-        color: #fefefe;
+        color: #1a405f;
         opacity: 0.31;
     }
     .social-media > ul > li > a:hover .fa{
-        color: #46bfa9;
+        color: #1a405f;
     }
 
 /* =======================
@@ -458,8 +458,8 @@ html, body, .wrapper{
         margin-top: 5px;
     }
     .navbar-nav {
-        border-top: 1px solid #46bfa9;
-        border-bottom: 1px solid #46bfa9;
+        border-top: 1px solid #1a405f;
+        border-bottom: 1px solid #1a405f;
     }
     .navbar-right {
     }
@@ -497,7 +497,7 @@ html, body, .wrapper{
         font-size: 14px;
         font-weight: 300;
         text-transform: uppercase;
-        color: #46bfa9;
+        color: #1a405f;
         position: relative;
         background: #313840;
         padding: 15px;
@@ -508,7 +508,7 @@ html, body, .wrapper{
         transition: all 1s;
     }
     .navbar-right > li ul li a:hover{
-        background: #46bfa9;
+        background: #a7b9c2;
         color: #fff
     }
 
@@ -540,7 +540,7 @@ html, body, .wrapper{
     .navbar-right > li > a:hover:before, .navbar-right > li > a:hover:after, .navbar-right > li.active > a:before, .navbar-right > li.active > a:after{
         width: 7px;
         height: 7px;
-        background: #46bfa9;
+        background: #a7b9c2;
         content: "";
         display: block;
         margin: 0 auto;
@@ -569,7 +569,7 @@ html, body, .wrapper{
     }
     .navbar-right > li > a:hover, .navbar-right > li > a:focus, .navbar-right > li.active > a{
         background: transparent;
-        color: #46bfa9;
+        color: #a7b9c2;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
@@ -624,7 +624,7 @@ html, body, .wrapper{
         text-transform: uppercase;
     }
     .carousel-caption > p > b > span{
-        color: #46bfa9
+        color: #1a405f
     }
     .carousel-control {
     }
@@ -634,7 +634,7 @@ html, body, .wrapper{
         box-shadow: none !important;
         width: 50px;
         height: 50px;
-        background: #46bfa9;
+        background: #1a405f;
         text-align: center;
         position: absolute;
         top: 45%;
@@ -654,14 +654,14 @@ html, body, .wrapper{
         height: 0;
         border-style: solid;
         border-width: 50px 100px 50px 0;
-        border-color: transparent #46bfa9 transparent transparent;
+        border-color: transparent #1a405f transparent transparent;
     }
     .carousel-control.left{
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 50px 0 50px 100px;
-        border-color: transparent transparent transparent #46bfa9;
+        border-color: transparent transparent transparent #1a405f;
     }
     .carousel-control span{
         font-size: 100px;
@@ -814,7 +814,7 @@ html, body, .wrapper{
         color: #242424;
         display: inline-block;
         padding: 15px 25px;
-        border: 1px solid #46bfa9;
+        border: 1px solid #1a405f;
         text-transform: uppercase;
         margin-top: 15px;
         position: relative;
@@ -833,7 +833,7 @@ html, body, .wrapper{
         height: 100%;
         width: 5px;
         position: absolute;
-        background: #46bfa9;
+        background: #1a405f;
         top: 0;
         left: -1px;
         z-index: -1;
@@ -885,7 +885,7 @@ html, body, .wrapper{
     .skill-bar {
         width: 100%;
         height: 25px;
-        background:#46bfa9;
+        background:#1a405f;
         display: block;
         position: relative;
     }
@@ -901,7 +901,7 @@ html, body, .wrapper{
         font-size: 18px;
         padding: 15px 0;
         font-weight: 400;
-        background: #46bfa9;
+        background: #1a405f;
         height: 50px;
         width: 50px;
         text-align: center;
@@ -1061,7 +1061,7 @@ html, body, .wrapper{
     }
     .panel-default {
         border: none;
-        background: #46bfa9 !important;
+        background: #1a405f !important;
     }
     .title-active{
 
@@ -1084,7 +1084,7 @@ html, body, .wrapper{
         color: #fff;
         text-transform: uppercase;
         display: block;
-        background: #46bfa9;
+        background: #1a405f;
         padding: 31.5px 25px;
         position: relative;
         -webkit-transition: all 0.5s;
@@ -1191,8 +1191,8 @@ html, body, .wrapper{
         right: 0;
     }
     .service-item:hover{
-        border-bottom: 1px solid #46bfa9;
-        border-top: 1px solid #46bfa9;
+        border-bottom: 1px solid #1a405f;
+        border-top: 1px solid #1a405f;
     }
     .service-conent {
     }
@@ -1217,7 +1217,7 @@ html, body, .wrapper{
         left: 0
     }
     .service-item:hover:before, .service-item:hover:after, .service-conent:hover:before, .service-conent:hover:after{
-        background: #46bfa9
+        background: #1a405f
     }
     .service-conent > a {
     }
@@ -1230,7 +1230,7 @@ html, body, .wrapper{
         transition: all 0.5s
     }
     .service-conent:hover > a > i{
-        color: #46bfa9;
+        color: #1a405f;
     }
     .service-conent > h3 {
         font-size: 19px;
@@ -1293,9 +1293,9 @@ html, body, .wrapper{
         transition: all 0.5s;
     }
     .fillter-menu > ul > li.active, .fillter-menu > ul > li:hover{
-        border-top: 1px solid #46bfa9;
-        border-bottom: 1px solid #46bfa9;
-        color: #46bfa9;
+        border-top: 1px solid #1a405f;
+        border-bottom: 1px solid #1a405f;
+        color: #1a405f;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
@@ -1313,7 +1313,7 @@ html, body, .wrapper{
         top: -5px;
         width: 9px;
         height: 9px;
-        background: #46bfa9;
+        background: #1a405f;
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -1328,7 +1328,7 @@ html, body, .wrapper{
         bottom: -5px;
         width: 9px;
         height: 9px;
-        background: #46bfa9;
+        background: #1a405f;
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -1361,7 +1361,7 @@ html, body, .wrapper{
         left: 20px;
         right: 20px;
         text-align: center;
-        background: #46bfa9;
+        background: #1a405f;
         display: block;
         opacity: 0;
         -webkit-transition: all  .5s;
@@ -1464,10 +1464,10 @@ html, body, .wrapper{
     }
     .port-meta > a:hover{
         background: #fff;
-        color: #46bfa9
+        color: #1a405f
     }
     .port-meta > a:hover i{
-        color: #46bfa9
+        color: #1a405f
     }
 
 
@@ -1536,7 +1536,7 @@ html, body, .wrapper{
     .testimonial-details > h3 {
         font-size: 30px;
         font-weight: 700;
-        color: #46bfa9;
+        color: #1a405f;
         margin: 0;
         padding: 0;
         text-transform: uppercase;
@@ -1552,7 +1552,7 @@ html, body, .wrapper{
     .testimonial-details > h5 {
         font-size: 16px;
         font-weight:200;
-        color: #46bfa9;
+        color: #1a405f;
         margin: 0;
         padding: 0;
     }
@@ -1605,7 +1605,7 @@ html, body, .wrapper{
         height: 0;
         border-style: solid;
         border-width: 50px 100px 50px 0;
-        border-color: transparent #46bfa9 transparent transparent;
+        border-color: transparent #1a405f transparent transparent;
         background: transparent !important;
         outline: none;
     }
@@ -1632,10 +1632,10 @@ html, body, .wrapper{
     .owl-page {
         height: 20px;
         width: 20px;
-        border: 1px solid #46bfa9;
+        border: 1px solid #1a405f;
         float: left;
         margin: 5px;
-        background: #46bfa9;
+        background: #1a405f;
     }
 
 
@@ -1706,7 +1706,7 @@ html, body, .wrapper{
         transition: all 0.5s;
     }
     .we-work-item:hover i, .we-work-item:hover h3{
-        color: #46bfa9
+        color: #1a405f
     }
     .we-top {
         display: block;
@@ -1904,7 +1904,7 @@ html, body, .wrapper{
     }
     .table-header {
         display: block;
-        background: #46bfa9;
+        background: #1a405f;
         color: #fff;
         padding: 20px 0;
     }
@@ -1937,7 +1937,7 @@ html, body, .wrapper{
 ========================= */
 .contact-btn-section {
     display: block;
-    background: #46bfa9;
+    background: #1a405f;
     padding: 50px 0;
 }
     .headline-title {
@@ -1968,7 +1968,7 @@ html, body, .wrapper{
         transition: all 0.5s;
     }
     .contact-btn > a:hover{
-        color: #46bfa9;
+        color: #1a405f;
     }
     .contact-btn > a:before{
         content: "";
@@ -2022,7 +2022,7 @@ html, body, .wrapper{
         margin-bottom: 30px
     }
     .team-item .social-media{
-        background: #46bfa9;
+        background: #1a405f;
         display: block;
         width: 100%;
         text-align: center;
@@ -2084,7 +2084,7 @@ html, body, .wrapper{
         background: #3b5998;
     }
     .team-item .social-media ul li a:hover .fa-twitter{
-        background: #4099FF;
+        background: #1a405f;
     }
     .team-item .social-media ul li a:hover .fa-dribbble{
         background: #C73B6F;
@@ -2099,7 +2099,7 @@ html, body, .wrapper{
         background: #111;
     }
     .team-item .caption {
-        background: #46bfa9;
+        background: #1a405f;
         display: block;
         color: #fff;
         text-align: center;
@@ -2280,7 +2280,7 @@ html, body, .wrapper{
         height: 0;
         border-style: solid;
         border-width: 50px 100px 50px 0;
-        border-color: transparent #46bfa9 transparent transparent;
+        border-color: transparent #1a405f transparent transparent;
         background: transparent !important;
         outline: none;
     }
@@ -2310,7 +2310,7 @@ html, body, .wrapper{
         display: block;
         width: 100%;
         height: 100%;
-        background: url(../images/white-plus.png) #46bfa9;
+        background: url(../images/white-plus.png) #1a405f;
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center center;
@@ -2380,7 +2380,7 @@ html, body, .wrapper{
         width: 40px;
         height: 42px;
         float: left;
-        background: #46bfa9;
+        background: #1a405f;
         color: #fff;
         display: block;
         text-align: center;
@@ -2394,7 +2394,7 @@ html, body, .wrapper{
         float: left;
     }
     .date-box {
-        background: #46bfa9;
+        background: #1a405f;
         color: #fff;
         margin-top: 5px;
         width: 40px;
@@ -2495,7 +2495,7 @@ html, body, .wrapper{
         font-weight: 300;
     }
     .contact-section .left-content h1 span{
-        color: #46bfa9;
+        color: #1a405f;
     }
     .contact-section .left-content h3{
         color: #fff;
@@ -2516,7 +2516,7 @@ html, body, .wrapper{
         font-family: 'Roboto';
     }
     .contact-section .left-content p b{
-        color: #46bfa9;
+        color: #1a405f;
     }
     .contact-section .left-content p{
         margin-bottom: 0;
@@ -2558,8 +2558,8 @@ html, body, .wrapper{
         padding: 7px 0;
     }
     .footer-social-media ul li a:hover i{
-        background: #46bfa9;
-        border: 1px solid #46bfa9;
+        background: #1a405f;
+        border: 1px solid #1a405f;
     }
     .contact-form{
         margin-top: 40px;
@@ -2585,12 +2585,12 @@ html, body, .wrapper{
         height: 120px;
     }
     .contact-form .form-control:focus, .contact-form .form-control:hover{
-        border: 1px solid #46bfa9;
+        border: 1px solid #1a405f;
         box-shadow: none;
-        color: #46bfa9 !important;
+        color: #fff !important;
     }
-    
-   
+
+
     span.pori-btn{
         padding: 0;
     }
@@ -2615,7 +2615,7 @@ html, body, .wrapper{
         width: 100%;
     }
     #message fieldset h1{
-        color: #46bfa9;
+        color: #1a405f;
         margin: 0;
         padding: 0;
         font-size: 20px;
@@ -2627,7 +2627,7 @@ html, body, .wrapper{
 .footer-top-section {
     display: block;
     width: 100%;
-    background: #222426;
+    background: #a7b9c2;
     padding: 70px 0 60px;
 }
     .widget {
@@ -2647,7 +2647,7 @@ html, body, .wrapper{
         content: "";
         width: 100px;
         height: 2px;
-        background: #46bfa9;
+        background: #1a405f;
         display: block;
         position: absolute;
         bottom: -5px;
@@ -2686,7 +2686,7 @@ html, body, .wrapper{
         font-style: normal;
         font-weight: normal;
         text-decoration: inherit;
-        color: #46bfa9;
+        color: #1a405f;
         font-size: 18px;
         padding-right: 0.5em;
         position: absolute;
@@ -2698,7 +2698,7 @@ html, body, .wrapper{
         transition: all 0.5s
     }
     .widget-item > ul > li > a:hover{
-        color: #46bfa9;
+        color: #1a405f;
     }
     .tagcloud {
         margin-left: -4px;
@@ -2706,14 +2706,14 @@ html, body, .wrapper{
     }
     .tagcloud > a {
         float: left;
-        background: #46bfa9;
+        background: #1a405f;
         padding: 3px 8px;
         margin: 4px;
         font-size: 14px;
         font-weight: 400;
         font-family: 'Open sans';
         color: #fff;
-        border-bottom: 1px solid #46bfa9;
+        border-bottom: 1px solid #1a405f;
     }
     .tagcloud > a:hover{
         border-bottom: 1px solid #fff;
@@ -2737,7 +2737,7 @@ html, body, .wrapper{
         color: #fff;
     }
     .footer-section p a{
-        color: #46bfa9
+        color: #1a405f
     }
     .footer-section p a:hover{
         color: #fff;
@@ -2747,7 +2747,7 @@ html, body, .wrapper{
         height: 0;
         border-style: solid;
         border-width: 0 25px 40px 25px;
-        border-color: transparent transparent #46bfa9 transparent;
+        border-color: transparent transparent #1a405f transparent;
         position: absolute;
         top: -60px;
         text-align: center;
@@ -2958,7 +2958,7 @@ html, body, .wrapper{
     }
     .slider-section {
       height: 200px;
-       width: 100%;;
+  width: 50%;;
         display: block;
         overflow: hidden;
     }
