@@ -59,8 +59,11 @@ class StudentController extends Controller
         $student->status                  = 1;
 
         $student->save();
+         return redirect()->back()->withFlashSuccess('done');
+        
          
     }
+
 
     /**
      * Display the specified resource.
